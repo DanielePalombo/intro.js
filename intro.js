@@ -466,6 +466,11 @@
         tooltipLayer.style.top = '-' + (tooltipHeight + 10) + 'px';
         arrowLayer.className = 'introjs-arrow bottom';
         break;
+      case 'bottom-right-aligned':
+        tooltipLayer.style.right = '0px';
+        tooltipLayer.style.top = '-' + (tooltipHeight + 10) + 'px';
+        arrowLayer.className = 'introjs-arrow right-bottom';
+        break;
       case 'right':
         tooltipLayer.style.left = (_getOffset(targetElement).width + 20) + 'px';
         if (targetOffset.top + tooltipHeight > windowSize.height) {
