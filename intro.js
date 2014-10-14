@@ -529,6 +529,10 @@
         tooltipLayer.style.bottom = '-' + (tooltipOffset.height + 10) + 'px';
         break;
       case 'bottom-left-aligned':
+        tooltipLayer.style.bottom = '-' + (_getOffset(tooltipLayer).height + 10) + 'px';
+        tooltipLayer.style.left   = '5px';
+        arrowLayer.className = 'introjs-arrow top';
+        break;
       // Bottom-left-aligned is the same as the default bottom
       case 'bottom':
       // Bottom going to follow the default behavior
